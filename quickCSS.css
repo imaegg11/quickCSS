@@ -102,3 +102,32 @@ button.button__4f306 /* make user panel buttons round */ {
 #app-mount .baseLayer__8fda3 /*keep view under settings*/
  { opacity: 1 !important;
    transform: unset !important; }
+
+/*
+    hide new messages bar until hovered
+    https://discord.com/channels/1015060230222131221/1028106818368589824/1198805704383930399
+*/
+
+.messagesWrapper_ea2b0b {
+    overflow: hidden;
+}
+.newMessagesBar__8b6d7 {
+    top: -48px;
+    height: 72px;
+    transition: top 0.2s ease;
+    background: none;
+    box-shadow: none;
+    border-radius: 0;
+}
+.newMessagesBar__8b6d7::before {
+    content: '';
+    background: var(--brand-experiment);
+    box-shadow: var(--elevation-low);
+    width: 100%;
+    position: absolute;
+    height: 32px;
+    border-radius: 12px;
+}
+.newMessagesBar__8b6d7:hover {
+    top: -12px;
+}
