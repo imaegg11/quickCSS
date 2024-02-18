@@ -136,8 +136,8 @@ button.button__4f306 /* make user panel buttons round */ {
     Me
 */
 
-.button_afdfd9.lookBlank__7ca0a.colorBrand_b2253e.grow__4c8a4 {
-    
+.buttons_ce5b56:nth-child(2) {
+    display: none;
 }
 
 
