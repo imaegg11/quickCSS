@@ -224,6 +224,7 @@
         padding-bottom: 13px;
         --tab-item-color: var(--text-primary);
         margin: 0px var(--space-xl) 0px 8px;
+        cursor: pointer;
     }
 
     .empty_e766f2 {
